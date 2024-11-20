@@ -11,6 +11,7 @@ import Positivirus from './pages/Positivirus.vue';
 <style scoped>
 .bodies {
   font-family: 'Space Grotesk', sans-serif;
+
 }
 </style>
 

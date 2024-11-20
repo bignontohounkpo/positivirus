@@ -1,31 +1,57 @@
- <template>
+<template>
+  <Navbar />
+  <div class="px-12 ">
 
-   <Navbar/>
-   <!--        <div class="md:hidden cursor-pointer" @click="toggleMenu">
-          <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
-          </svg>
-        </div> 
-              const menuOpen = ref(false);
-  
-      const toggleMenu = () => {
-        menuOpen.value = !menuOpen.value;
-      };
--->
-   
- </template>
- 
- <script> 
 
-import Navbar from '../components/Navbar.vue'; 
- export default {
+    <div class=" py-16 flex items-center justify-center ">
+      <div class="grid grid-cols-2 grid-cols-md-1">
+        <div class="   ">
+          <p class="text-5xl text-black font-medium"> Navigating the <br>
+            digital <br>
+            landscape <br>
+            for success
+          </p>
+          <div class=" px-3 py-3">
+            <p class="">
+              Our digital marketing agency helps businesses <br> grow and succeed online through a range of <br>services
+              including
+              SEO, PPC, social media marketing, <br>and content creation. Book a consultation
+            </p>
+          </div>
+          <button class="text-white bg-black px-3 rounded-lg p-4">
+            Book a Consultation
+          </button>
+
+        </div>
+
+        <div class=" ">
+          <img src="/images/Illustration.svg" alt="">
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class=" bg-[#F3F3F3] items-center justify-center">
+    <div class="px-12 grid grid-cols-6 animate-scroll whitespace-nowrap">
+      <img src="/icons/amazon.svg" alt="">
+      <img src="/icons/dribble.svg" alt="">
+      <img src="/icons/hubspot.svg" alt="">
+      <img src="/icons/notion.svg" alt="">
+      <img src="/icons/netflix.svg" alt="">
+      <img src="/icons/zoom.svg" alt="">
+    </div>
+  </div>
+
+</template>
+
+<script>
+
+import Navbar from '../components/Navbar.vue';
+export default {
   components: {
-    Navbar, 
+    Navbar,
   },
- 
- }
- </script>
- 
- <style>
- 
- </style>
+
+}
+</script>
+
+<style></style>
