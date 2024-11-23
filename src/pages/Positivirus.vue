@@ -4,8 +4,8 @@
 
 
     <div class=" py-16 flex items-center justify-center ">
-      <div class="grid grid-cols-2 grid-cols-md-1">
-        <div class="   ">
+      <div class="grid lg:grid-cols-2 md:grid-cols-1 sm:grid-cols-1">
+        <div class="  ">
           <p class="text-5xl text-black font-medium"> Navigating the <br>
             digital <br>
             landscape <br>
@@ -24,8 +24,11 @@
 
         </div>
 
-        <div class=" ">
-          <img src="/images/Illustration.svg" alt="">
+        <div class=""
+        >
+          <img src="/images/Illustration.svg" alt="" class="bounce-animation "
+       data-aos="flip-up"
+       data-aos-duration="1000">
         </div>
       </div>
     </div>
@@ -54,4 +57,8 @@ export default {
 }
 </script>
 
-<style></style>
+<style>
+.bounce-animation {
+  animation: float-up-down 2s ease-in-out infinite;
+}
+</style>
