@@ -3,7 +3,7 @@ import Positivirus from './pages/Positivirus.vue';
 </script>
 
 <template>
-  <div class="bodies">
+  <div class="bodies ">
   <Positivirus/>
 </div>
 </template>
