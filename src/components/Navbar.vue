@@ -1,5 +1,5 @@
 <template >
-  <div class="bg-[#F3F3F3]  top-0 sticky">
+  <div class="bg-[#F3F3F3]  top-0 sticky z-index-50">
     <div class="text-[#191A23] container py-3.5 px-12 md:px-12 flex justify-between items-center relative">
       <!-- Logo -->
       <div class="flex items-center gap-3">

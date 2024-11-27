@@ -4,14 +4,13 @@
         <!-- Image div - will appear first on mobile/tablet -->
         <div class="order-1 lg:order-2">
           <img src="/images/Illustration.svg" alt="Digital Marketing Illustration" 
-            class="bounce-animation w-full max-w-md mx-auto"
-            data-aos="flip-up"
-            data-aos-duration="1000">
+            class="bounce-animation w-full max-w-md mx-auto z-index"
+            >
         </div>
 
         <!-- Text content - will appear second on mobile/tablet -->
         <div class="order-2 lg:order-1 text-center lg:text-left">
-          <p class="text-4xl lg:text-5xl text-black font-medium leading-tight"> 
+          <p class="text-3xl lg:text-5xl text-black font-medium leading-tight"> 
             Navigating the
             digital
             landscape

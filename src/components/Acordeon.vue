@@ -16,7 +16,7 @@
       <div 
         v-for="(item, index) in items" 
         :key="index" 
-        class="border border-black rounded-2xl transition-all duration-300"
+        class="border-gray-700 border-b-4 border-b-black rounded-2xl transition-all duration-300"
         :class="{
           'border-2': item.isOpen,
           'bg-[#B9FF66]': item.isOpen
