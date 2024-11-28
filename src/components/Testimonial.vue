@@ -24,7 +24,7 @@
                     <p class="text-white text-lg">{{ testimonial.quote }}</p>
                   </div>
                   <div class="text-center">
-                    <p class="text-[#B9FF66] font-semibold">{{ testimonial.name }}</p>
+                    <p class="text-[#B9FF66]  font-semibold">{{ testimonial.name }}</p>
                     <p class="text-gray-400">{{ testimonial.position }}</p>
                   </div>
                 </div>
