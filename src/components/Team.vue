@@ -50,7 +50,7 @@ const teamMembers = [
     position: 'CEO & Founder',
     image: '/images/john.svg',
     linkedin: 'https://linkedin.com',
-    description: 'With over 10 years of experience in digital marketing, John leads our team with innovative strategies and a passion for client success.'
+    description: '10+ years of experience in digital marketing. Expertise in SEO, PPC, and content strategy'
   },
   {
     id: 2,
@@ -80,7 +80,7 @@ const teamMembers = [
     id: 5,
     name: 'David Wilson',
     position: 'PPC Specialist',
-    image: '/images/jane.jpg.svg',
+    image: '/images/jane.jpg',
     linkedin: 'https://linkedin.com',
     description: 'Davids analytical mindset and PPC expertise deliver outstanding ROI for our clients advertising campaigns.'
   },
