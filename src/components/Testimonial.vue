@@ -12,20 +12,20 @@
     </div>
 
     <!-- Testimonial Slider -->
-    <div class="max-w-5xl mx-auto relative">
+    <div class="max-w-4xl mx-auto relative">
       <div class="bg-black p-8 rounded-2xl">
         <!-- Quote Container -->
         <div class="relative">
           <div class="overflow-hidden">
             <div class="flex transition-transform duration-500 ease-in-out" :style="{ transform: `translateX(-${currentIndex * 100}%)` }">
               <div v-for="testimonial in testimonials" :key="testimonial.id" class="w-full flex-shrink-0">
-                <div class="border-2 border-[#B9FF66] p-6 rounded-br-3xl">
-                  <p class="text-white text-lg mb-6">{{ testimonial.quote }}</p>
-                  <div class="flex items-center">
-                    <div>
-                      <p class="text-[#B9FF66] font-semibold">{{ testimonial.name }}</p>
-                      <p class="text-gray-400">{{ testimonial.position }}</p>
-                    </div>
+                <div class="max-w-2xl mx-auto">
+                  <div class="border-2 border-[#B9FF66] p-6 rounded-bl-3xl mb-4">
+                    <p class="text-white text-lg">{{ testimonial.quote }}</p>
+                  </div>
+                  <div class="text-center">
+                    <p class="text-[#B9FF66] font-semibold">{{ testimonial.name }}</p>
+                    <p class="text-gray-400">{{ testimonial.position }}</p>
                   </div>
                 </div>
               </div>
@@ -42,24 +42,6 @@
               :class="index === currentIndex ? 'bg-[#B9FF66]' : 'bg-gray-600'"
             ></button>
           </div>
-
-          <!-- Navigation Arrows -->
-          <button
-            @click="prevSlide"
-            class="absolute left-0 top-1/2 -translate-y-1/2 -translate-x-12 text-[#B9FF66] hover:text-white transition-colors"
-          >
-            <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
-            </svg>
-          </button>
-          <button
-            @click="nextSlide"
-            class="absolute right-0 top-1/2 -translate-y-1/2 translate-x-12 text-[#B9FF66] hover:text-white transition-colors"
-          >
-            <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
-            </svg>
-          </button>
         </div>
       </div>
     </div>
@@ -106,6 +88,7 @@ const setCurrentIndex = (index) => {
 }
 
 const startAutoplay = () => {
+  stopAutoplay()
   autoplayInterval.value = setInterval(() => {
     nextSlide()
   }, 5000)
@@ -114,6 +97,7 @@ const startAutoplay = () => {
 const stopAutoplay = () => {
   if (autoplayInterval.value) {
     clearInterval(autoplayInterval.value)
+    autoplayInterval.value = null
   }
 }
 

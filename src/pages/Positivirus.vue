@@ -8,6 +8,7 @@
     <Team />
     <Testimonial />  
     <Formulaire />
+    <Footer />
   </div>
 </template>
 
@@ -20,6 +21,7 @@ import Testimonial from "../components/Testimonial.vue"
 import Cases from "../components/Cases.vue"
 import Team from "../components/Team.vue"
 import Formulaire from "../components/Formulaire.vue"
+import Footer from "../components/Footer.vue"
 
 export default {
   components: {
@@ -30,7 +32,8 @@ export default {
     Testimonial,
     Cases,
     Team,
-    Formulaire
+    Formulaire,
+    Footer
   },
 };
 </script>

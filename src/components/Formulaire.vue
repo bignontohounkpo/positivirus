@@ -11,10 +11,10 @@
 
   <div class=" px-4 py-2 bg-[#F3F3F3] rounded-xl justify-between">
     <!-- Form Section -->
-    <div class="p-8  flex flex-col md:flex-row items-start gap-8 relative">
+    <div class="p-8 flex flex-col md:flex-row items-center md:items-start gap-8 relative">
       <!-- Left Form -->
-      <div class="flex-1">
-        <div class="flex items-center gap-4 mb-6">
+      <div class="flex-1 w-full max-w-md mx-auto md:max-w-none">
+        <div class="flex items-center justify-center md:justify-start gap-4 mb-6">
           <label class="flex items-center gap-2">
             <input type="radio" name="contact" value="Say Hi" class="text-[#B9FF66]" checked />
             <span class="text-gray-700">Say Hi</span>
