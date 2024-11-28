@@ -1,6 +1,6 @@
 <template>
   <div class="px-12 py-8">
-    <div class="flex gap-4 mb-12">
+    <div class="flex flex-col sm:flex-row gap-4 mb-8 sm:mb-12">
       <div class="bg-[#B9FF66] py-2 px-4">
         <p class="text-2xl font-bold">Services</p>
       </div>

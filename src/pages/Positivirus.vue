@@ -1,13 +1,13 @@
 <template>
   <Navbar />
   <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
- 
     <HeroSection />
     <Services />
     <Cases />
     <Acordeon />
     <Team />
     <Testimonial />  
+    <Formulaire />
   </div>
 </template>
 
@@ -19,6 +19,8 @@ import Acordeon from "../components/Acordeon.vue"
 import Testimonial from "../components/Testimonial.vue"
 import Cases from "../components/Cases.vue"
 import Team from "../components/Team.vue"
+import Formulaire from "../components/Formulaire.vue"
+
 export default {
   components: {
     Navbar,
@@ -27,10 +29,11 @@ export default {
     Acordeon,
     Testimonial,
     Cases,
-    Team
+    Team,
+    Formulaire
   },
 };
 </script>
 
-<style>
+<style scoped>
 </style>

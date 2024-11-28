@@ -59,31 +59,31 @@ const items = ref([
   },
   {
     number: '02',
-    title: 'What services are included in your digital marketing package?',
+    title: 'Research and Strategy Development',
     content: 'Our digital marketing package includes SEO optimization, social media management, content creation, email marketing campaigns, PPC advertising, and detailed analytics reporting. We customize our services based on your specific business needs and goals.',
     isOpen: false
   },
   {
     number: '03',
-    title: 'How long does it take to see results from digital marketing?',
+    title: 'Implementation',
     content: 'The timeline for seeing results varies depending on factors such as your industry, competition, and chosen strategies. Generally, some initial results can be seen within 3-6 months, with more significant results developing over 6-12 months of consistent effort.',
     isOpen: false
   },
   {
     number: '04',
-    title: 'How much does digital marketing cost?',
+    title: 'Monitoring and Optimization',
     content: 'Our digital marketing costs vary based on your business needs, goals, and the scope of services required. We offer customized packages to fit different budgets and provide transparent pricing with no hidden fees.',
     isOpen: false
   },
   {
     number: '05',
-    title: 'How do you measure digital marketing success?',
+    title: ' Reporting and Communication',
     content: 'We measure success through various metrics including website traffic, conversion rates, engagement rates, ROI, keyword rankings, and more. We provide regular detailed reports and analytics to track progress and adjust strategies as needed.',
     isOpen: false
   },
   {
     number: '06',
-    title: 'How do you measure digital marketing success?',
+    title: 'Continual Improvement',
     content: 'We measure success through various metrics including website traffic, conversion rates, engagement rates, ROI, keyword rankings, and more. We provide regular detailed reports and analytics to track progress and adjust strategies as needed.',
     isOpen: false
   }
