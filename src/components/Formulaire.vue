@@ -11,7 +11,7 @@
 
   <div class=" px-4 py-2 bg-[#F3F3F3] rounded-xl justify-between">
     <!-- Form Section -->
-    <div class="p-8 flex flex-col md:flex-row items-center md:items-start gap-8 relative">
+    <div class="ps-8 flex flex-col md:flex-row items-center md:items-start gap-8 relative">
       <!-- Left Form -->
       <div class="flex-1 w-full max-w-md mx-auto md:max-w-none">
         <div class="flex items-center justify-center md:justify-start gap-4 mb-6">
@@ -73,7 +73,7 @@
       <!-- Right Decorative Section -->
       <div class="hidden md:block flex-1">
         <div class="flex justify-end  items-center">
-            <img src="/images/form.png" alt="" class=" h-96 object-contain">
+            <img src="/images/form.png" alt="" class=" h-1/4 object-contain">
         </div>
       </div>
     </div>

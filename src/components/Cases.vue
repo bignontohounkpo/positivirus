@@ -34,7 +34,7 @@
 const caseStudies = [
   {
     description:
-      "For a local restaurant, we implemented a targeted PPC campaign that resulted in a 50% increase in website traffic and a 25% increase in sales.",
+      "For a local restaurant, weimplemented a targeted PPC campaign that resulted in a 50% increase in website traffic and a 25% increase in sales.",
   },
   {
     description:

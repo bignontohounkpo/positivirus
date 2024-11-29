@@ -52,45 +52,47 @@ const teamMembers = [
     linkedin: 'https://linkedin.com',
     description: '10+ years of experience in digital marketing. Expertise in SEO, PPC, and content strategy'
   },
+
   {
     id: 2,
-    name: 'Sarah Johnson',
-    position: 'SEO Specialist',
-    image: '/images/sarah.png',
+    name: 'Jane Doe',
+    position: 'Director of Operations',
+    image: '/images/jane.jpg',
     linkedin: 'https://linkedin.com',
-    description: 'Sarahs expertise in SEO and data analytics has helped numerous clients achieve top rankings in search results.'
+    description: '7+ years of experience in project management and team leadership. Strong organizational and communication skills'
   },
   {
     id: 3,
-    name: 'Michael Chen',
-    position: 'Content Strategist',
+    name: 'Michael Brown',
+    position: 'Senior SEO Specialist',
     image: '/images/michael.svg',
     linkedin: 'https://linkedin.com',
-    description: 'Michael crafts compelling content strategies that engage audiences and drive meaningful conversions.'
+    description: '5+ years of experience in SEO and content creation. Proficient in keyword research and on-page optimization'
   },
   {
     id: 4,
-    name: 'Emily Davis',
-    position: 'Social Media Manager',
+    name: 'Emily Johnson',
+    position: 'PCC Manager',
     image: '/images/emily.svg',
     linkedin: 'https://linkedin.com',
-    description: 'Emilys creative approach to social media has helped brands build strong online communities and increase engagement.'
+    description: '3+ years of experience in paid search advertising. Skilled in campaign management and performance analysis'
   },
   {
     id: 5,
-    name: 'David Wilson',
-    position: 'PPC Specialist',
-    image: '/images/jane.jpg',
+    name: 'Brian Williams',
+    position: 'Social Media Specialist',
+    image: '/images/brian.svg',
     linkedin: 'https://linkedin.com',
-    description: 'Davids analytical mindset and PPC expertise deliver outstanding ROI for our clients advertising campaigns.'
+    description: '4+ years of experience in social media marketing. Proficient in creating and scheduling content, analyzing metrics, and building engagement'
   },
+
   {
     id: 6,
-    name: 'Lisa Thompson',
-    position: 'Digital PR Manager',
-    image: '/images/jane.svg',
+    name: 'Sarah Kim',
+    position: 'Content Creator ',
+    image: '/images/sarah.png',
     linkedin: 'https://linkedin.com',
-    description: 'Lisa builds strong relationships with media and influencers to enhance our clients digital presence.'
+    description: '2+ years of experience in writing and editing Skilled in creating compelling, SEO-optimized content for various industries'
   }
 ]
 </script>

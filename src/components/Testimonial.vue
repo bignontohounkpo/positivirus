@@ -17,10 +17,10 @@
         <!-- Quote Container -->
         <div class="relative">
           <div class="overflow-hidden">
-            <div class="flex transition-transform duration-500 ease-in-out" :style="{ transform: `translateX(-${currentIndex * 100}%)` }">
+            <div class="flex transition-transform duration-1000 ease-in-out" :style="{ transform: `translateX(-${currentIndex * 100}%)` }">
               <div v-for="testimonial in testimonials" :key="testimonial.id" class="w-full flex-shrink-0">
                 <div class="max-w-2xl mx-auto">
-                  <div class="border-2 border-[#B9FF66] p-6 rounded-bl-3xl mb-4">
+                  <div class="border border-[#B9FF66] p-6 rounded-bl-7xl mb-4 rounded-xl">
                     <p class="text-white text-lg">{{ testimonial.quote }}</p>
                   </div>
                   <div class="text-center">
@@ -54,19 +54,19 @@ import { ref, onMounted, onUnmounted } from 'vue'
 const testimonials = [
   {
     id: 1,
-    quote: "Working with Positivus has been a game-changer for our online presence. Their strategic approach and attention to detail have helped us achieve remarkable growth.",
+    quote: "We have been working with Positivus for the past year and have seen a significant increase in website traffic and leads as a result of their efforts. The team is professional, responsive, and truly cares about the success of our business. We highly recommend Positivus to any company looking to grow their online presence.",
     name: "Sarah Johnson",
     position: "Marketing Director"
   },
   {
     id: 2,
-    quote: "The team at Positivus truly understands digital marketing. They've helped us increase our online visibility and generate more qualified leads than ever before.",
+    quote: "We have been working with Positivus for the past year and have seen a significant increase in website traffic and leads as a result of their efforts. The team is professional, responsive, and truly cares about the success of our business. We highly recommend Positivus to any company looking to grow their online presence.",
     name: "Michael Chen",
     position: "CEO"
   },
   {
     id: 3,
-    quote: "I'm amazed by the results Positivus has delivered. Their expertise in SEO and content marketing has significantly boosted our website traffic and conversions.",
+    quote: "We have been working with Positivus for the past year and have seen a significant increase in website traffic and leads as a result of their efforts. The team is professional, responsive, and truly cares about the success of our business. We highly recommend Positivus to any company looking to grow their online presence.",
     name: "Emily Rodriguez",
     position: "E-commerce Manager"
   }
