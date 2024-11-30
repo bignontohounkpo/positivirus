@@ -39,8 +39,8 @@
       </div>
 
       <!-- Section Newsletter -->
-      <div class="lg:col-span-2 flex justify-start items-end pb-4">
-        <form class="flex flex-col lg:flex-row gap-4 w-full lg:w-auto">
+      <div class="lg:col-span-2 flex justify-center lg:justify-start items-end pb-4">
+        <form class="flex flex-col lg:flex-row gap-4 w-full md:w-[80%] lg:w-auto">
           <input 
             type="email" 
             placeholder="Email" 

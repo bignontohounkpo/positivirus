@@ -1,11 +1,11 @@
 <template>
-        <div class="flex flex-col sm:flex-row gap-4 mb-8 sm:mb-12">
-      <div class="bg-[#B9FF66] py-2 px-4">
+        <div class="flex flex-col sm:flex-row gap-4 mb-16 sm:mb-16">
+      <div class="bg-[#B9FF66] py-2 px-4 w-fit self-center sm:self-auto">
         <p class="text-2xl font-bold">Contact Us</p>
       </div>
-      <span class="text-sm sm:text-base sm:self-center">
-        Connect with Us: Let's Discuss Your <br>
-        Digital Marketing Needs
+      <span class="text-sm sm:text-base text-center sm:text-left sm:self-center">
+        Connect with us today and let's discuss your digital marketing needs <br>
+        and goals
       </span>
     </div>
 

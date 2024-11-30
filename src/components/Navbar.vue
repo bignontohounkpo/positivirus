@@ -1,33 +1,33 @@
 <template >
-  <div class="bg-[#F3F3F3]  top-0 sticky z-index-50">
-    <div class="text-[#191A23] container py-3.5 px-12 md:px-12 flex justify-between items-center relative">
+  <div class="bg-[#F3F3F3] fixed top-0 left-0 right-0 z-50">
+    <div class="text-[#191A23] container py-2 px-4 md:px-6 flex items-center justify-between relative">
       <!-- Logo -->
-      <div class="flex items-center gap-3">
-        <img src="/images/logo.svg" alt="Logo" class="h-8">
+      <div class="flex items-center">
+        <img src="/images/logo.svg" alt="Logo" class="h-8 w-32">
       </div>
 
       <!-- Bouton toggle (tablettes et téléphones) -->
-      <button @click="toggleMenu" class="block lg:hidden text-2xl">
+      <button @click="toggleMenu" class="block lg:hidden">
         <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
           <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
         </svg>
       </button>
 
       <!-- Menu -->
-      <div :class="[
+      <div :class=" [
         Menu ? 'translate-x-0' : '-translate-x-full',
-        'absolute lg:static top-full left-10 lg:left-auto w-3/4 md:w-1/2 lg:w-auto  lg:bg-transparent lg:translate-x-0 transition-transform duration-300 z-10'
+        'absolute lg:static top-full left-0 w-full  lg:w-auto bg-[#F3F3F3] lg:bg-transparent lg:translate-x-0 transition-transform duration-300 z-50'
       ]">
-        <ul class="flex flex-col lg:flex-row lg:items-center gap-4 p-4 lg:p-0">
+        <ul class="flex flex-col lg:flex-row lg:items-center gap-4 lg:gap-0 ">
           <li class="lg:mx-5" v-for="(link, index) in links" :key="index">
             <a :href="link.link" class="text-lg hover:text-gray-700 transition">
               {{ link.name }}
             </a>
           </li>
           <button
-            class="active-scale border-4 ps-3 border-bg-black p-4 hover:bg-black hover:text-white rounded-xl">
+            class="active-scale border-2 ps-3 border-bg-black px-4 py-2 hover:bg-black hover:text-white rounded-xl w-full lg:w-auto max-w-[200px] lg:ml-2">
             Request a quote
-            <svg xmlns="http://www.w3.org/2000/svg" class=" hidden hover:flex hover:text-white h-4 w-4" fill="none" viewBox="0 0 24 24"
+            <svg xmlns="http://www.w3.org/2000/svg" class="hidden hover:flex hover:text-white h-4 w-4" fill="none" viewBox="0 0 24 24"
               stroke="currentColor">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
             </svg>
@@ -73,5 +73,9 @@ export default {
 /* Optionnel : Ajout de transition fluide */
 .transition-transform {
   transition: transform 0.3s ease-in-out;
+}
+
+.z-50 {
+  z-index: 50;
 }
 </style>

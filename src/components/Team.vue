@@ -1,13 +1,13 @@
 <template>
-  <div class="w-full py-12 bg-white">
+  <div class="w-full py-12 bg-white mb-16">
     <!-- Title Section -->
     <div class="flex flex-col sm:flex-row gap-4 mb-8 sm:mb-12">
-      <div class="bg-[#B9FF66] py-2 px-4">
+      <div class="bg-[#B9FF66] py-2 px-4 w-fit self-center sm:self-auto">
         <p class="text-2xl font-bold">Team</p>
       </div>
-      <span class="text-sm sm:text-base sm:self-center">
-        Meet the Skilled and Dedicated Members of <br>
-        Our Digital Marketing Team
+      <span class="text-sm sm:text-base text-center sm:text-left sm:self-center">
+        Meet the skilled and experienced team behind our successful digital <br>
+        marketing strategies
       </span>
     </div>
 

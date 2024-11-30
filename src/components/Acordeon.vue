@@ -1,13 +1,13 @@
 <template>
-  <div class="w-full px-4 sm:px-6 md:px-8 lg:px-16">
+  <div class="w-full px-4 sm:px-6 md:px-8 lg:px-16 mb-16">
     <!-- Accordion Header -->
     <div class="flex flex-col sm:flex-row gap-4 mb-8 sm:mb-12">
-      <div class="bg-[#B9FF66] py-2 px-4">
-        <p class="text-2xl font-bold">Our Working Process</p>
+      <div class="bg-[#B9FF66] py-2 px-4 w-fit self-center sm:self-auto">
+        <p class="text-2xl font-bold">Testimonial</p>
       </div>
-      <span class="text-sm sm:text-base sm:self-center">
-        Step-by-Step Guide to Archieving <br>
-        Your Business Goals
+      <span class="text-sm sm:text-base text-center sm:text-left sm:self-center">
+        Find answers to common questions about our digital marketing <br>
+        services and process
       </span>
     </div>
 
@@ -33,15 +33,24 @@
           <img 
             :src="item.isOpen ? '/icons/Plus_icon.svg' : '/icons/Plus icon.svg'"
             :alt="item.isOpen ? 'Minus icon' : 'Plus icon'"
-            class="w-5 h-5 sm:w-6 sm:h-6 flex-shrink-0"
+            class="w-5 h-5 sm:w-6 sm:h-6 flex-shrink-0 transition-transform duration-300"
+            :class="{ 'rotate-45': item.isOpen }"
           >
         </div>
-        <div 
-          v-show="item.isOpen"
-          class="px-4 sm:px-6 pb-4 sm:pb-6 overflow-hidden transition-all duration-500 ease-in-out"
+        <transition
+          name="accordion"
+          @enter="startTransition"
+          @leave="endTransition"
         >
-          <p class="text-black ml-8 sm:ml-16 text-sm sm:text-base">{{ item.content }}</p>
-        </div>
+          <div 
+            v-show="item.isOpen"
+            class="overflow-hidden"
+          >
+            <p class="text-black ml-8 sm:ml-16 text-sm sm:text-base px-4 sm:px-6 pb-4 sm:pb-6">
+              {{ item.content }}
+            </p>
+          </div>
+        </transition>
       </div>
     </div>
   </div>
@@ -89,6 +98,21 @@ const items = ref([
   }
 ])
 
+const startTransition = (el) => {
+  el.style.height = '0'
+  el.style.opacity = '0'
+  void el.offsetHeight
+  el.style.height = el.scrollHeight + 'px'
+  el.style.opacity = '1'
+}
+
+const endTransition = (el) => {
+  el.style.height = el.scrollHeight + 'px'
+  void el.offsetHeight
+  el.style.height = '0'
+  el.style.opacity = '0'
+}
+
 const toggleAccordion = (index) => {
   items.value = items.value.map((item, i) => ({
     ...item,
@@ -98,9 +122,21 @@ const toggleAccordion = (index) => {
 </script>
 
 <style scoped>
+.accordion-enter-active,
+.accordion-leave-active {
+  transition: height 0.3s ease-in-out, opacity 0.3s ease-in-out;
+  overflow: hidden;
+}
+
+.accordion-enter-from,
+.accordion-leave-to {
+  height: 0;
+  opacity: 0;
+}
+
 @media (max-width: 640px) {
-  .text-base {
-    line-height: 1.4;
+  .accordion-item {
+    margin-bottom: 1rem;
   }
 }
 </style>

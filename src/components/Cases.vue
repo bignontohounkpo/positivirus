@@ -1,11 +1,11 @@
 <template>
-    <div class="w-full py-12 bg-white">
+    <div class="w-full py-12 bg-white mb-16">
       <!-- Title Section -->
       <div class="flex flex-col sm:flex-row gap-4 mb-8 sm:mb-12">
-        <div class="bg-[#B9FF66] py-2 px-4">
+        <div class="bg-[#B9FF66] py-2 px-4 w-fit self-center sm:self-auto">
           <p class="text-2xl font-bold">Case Studies</p>
         </div>
-        <span class="text-sm sm:text-base sm:self-center">
+        <span class="text-sm sm:text-base text-center sm:text-left sm:self-center">
           Explore Real-Life Examples of Our Proven Digital Marketing Success <br>
           through Our Case Studies
         </span>
@@ -26,8 +26,7 @@
           </a>
         </div>
       </div>
-    </div
-    >
+    </div>
 </template>
 
 <script setup>
