@@ -1,5 +1,5 @@
-module.exports = {
-  content: ['./index.html', './src/**/*.{vue,js,ts,jsx,tsx}'], // Assurez-vous que les fichiers Vue sont inclus
+export default {
+  content: ["./src/**/*.{html,js}"],
   theme: {
     extend: {},
   },
